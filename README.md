@@ -4,7 +4,7 @@
 
 General Sass Style Library
 
-* [Columns](../styles/columns.scss)
+* [Columns](/styles/columns.scss)
 
 ## Columns
 
