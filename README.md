@@ -7,6 +7,7 @@ General Sass Style Library
 * [Columns](/styles/columns.scss)
 * [Flex](/styles/flex.scss)
 * [Position](/styles/position.scss)
+* [Content-Width](/styles/content.scss)
 
 ## Columns
 
@@ -34,4 +35,12 @@ Usage: position($position, $top, $right, $bottom, $left)
 
 ```scss
 @include position(absolute,0,0,null,null);
+```
+
+## Content-Width
+
+Usage: content-width($width)
+
+```scss
+@include content-width(900px);
 ```
