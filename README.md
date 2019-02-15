@@ -5,9 +5,10 @@
 General Sass Style Library
 
 * [Columns](/styles/columns.scss)
-* [Flex](/styles/flex.scss)
-* [Position](/styles/position.scss)
 * [Content-Width](/styles/content.scss)
+* [Flex](/styles/flex.scss)
+* [Media Queries](/styles/media.scss)
+* [Position](/styles/position.scss)
 
 ## Columns
 
@@ -21,6 +22,14 @@ General Sass Style Library
 </div>
 ```
 
+## Content-Width
+
+Usage: content-width($width)
+
+```scss
+@include content-width(900px);
+```
+
 ## Flex
 
 Usage: flex($flex-direction, $flex-wrap, $justify-content, $align-items)
@@ -29,18 +38,22 @@ Usage: flex($flex-direction, $flex-wrap, $justify-content, $align-items)
 @include flex(row,wrap,flex-start,center);
 ```
 
+## Media Queries
+
+Usage min($width) | max($width) | min-max($min, $max)
+
+```scss
+@include min(500px) { color: blue; }
+
+@include max(800px) { color: red; }
+
+@include min-max(500px, 800px) { color: yellow; }
+```
+
 ## Position
 
 Usage: position($position, $top, $right, $bottom, $left)
 
 ```scss
 @include position(absolute,0,0,null,null);
-```
-
-## Content-Width
-
-Usage: content-width($width)
-
-```scss
-@include content-width(900px);
 ```
