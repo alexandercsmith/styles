@@ -35,6 +35,82 @@ $lg: 1280px;
 .col-11-12 { width: 91.66%; }
 
 
+/* only-on-xl only-on-lg only-on-md only-on-sm only-on-xs */
+@media screen and (min-width: $lg) {
+  .only-on-lg { display: none !important; }
+  .only-on-md { display: none !important; }
+  .only-on-sm { display: none !important; }
+  .only-on-xs { display: none !important; }
+}
+@media screen and (max-width: $lg) and (min-width: $md + 1) {
+  .only-on-xl { display: none !important; }
+  .only-on-md { display: none !important; }
+  .only-on-sm { display: none !important; }
+  .only-on-xs { display: none !important; }
+}
+@media screen and (max-width: $md) and (min-width: $sm + 1) {
+  .only-on-xl { display: none !important; }
+  .only-on-lg { display: none !important; }
+  .only-on-sm { display: none !important; }
+  .only-on-xs { display: none !important; }
+}
+@media screen and (max-width: $sm) and (min-width: $xs + 1) {
+  .only-on-xl { display: none !important; }
+  .only-on-lg { display: none !important; }
+  .only-on-md { display: none !important; }
+  .only-on-xs { display: none !important; }
+}
+@media screen and (max-width: $xs) {
+  .only-on-xl { display: none !important; }
+  .only-on-lg { display: none !important; }
+  .only-on-md { display: none !important; }
+  .only-on-sm { display: none !important; }
+}
+
+/* hide-at-lg hide-at-md hide-at-sm hide-at-xs */
+.hide-at-lg {
+  @media screen and (max-width: $lg) {
+    display: none !important;
+  }
+}
+.hide-at-md {
+  @media screen and (max-width: $md) {
+    display: none !important;
+  }
+}
+.hide-at-sm {
+  @media screen and (max-width: $sm) {
+    display: none !important;
+  }
+}
+.hide-at-xs {
+  @media screen and (max-width: $xs) {
+    display: none !important;
+  }
+}
+
+/* show-at-lg show-at-md show-at-sm show-at-xs */
+.show-at-lg {
+  @media screen and (min-width: $lg + 1) {
+    display: none !important;
+  }
+}
+.show-at-md {
+  @media screen and (min-width: $md + 1) {
+    display: none !important;
+  }
+}
+.show-at-sm {
+  @media screen and (min-width: $sm + 1) {
+    display: none !important;
+  }
+}
+.show-at-xs {
+  @media screen and (min-width: $xs + 1) {
+    display: none !important;
+  }
+}
+
 /* xl-col */
 @media screen and (min-width: $lg) {
   .xl-col-1-1, .xl-col-12-12 { width: 100%; }

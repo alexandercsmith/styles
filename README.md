@@ -4,11 +4,24 @@
 
 General Sass Style Library
 
+* [Angles](/styles/angles.scss)
 * [Columns](/styles/columns.scss)
 * [Content-Width](/styles/content.scss)
 * [Flex](/styles/flex.scss)
 * [Media Queries](/styles/media.scss)
 * [Position](/styles/position.scss)
+
+## Angles
+
+```html
+<div class="angle-top-left">{ content }</div>
+
+<div class="angle-top-right">{ content }</div>
+
+<div class="angle-bottom-left">{ content }</div>
+
+<div class="angle-bottom-right">{ content }</div>
+```
 
 ## Columns
 
@@ -18,6 +31,22 @@ General Sass Style Library
 </div>
 
 <div class="col-1-1">
+  { content }
+</div>
+
+<div class="xl-col-1-4 lg-col-1-4 md-col-1-4 hide-on-sm xs-col-1-1">
+  { content }
+</div>
+
+<div class="xl-col-1-1 lg-col-1-1 hide-at-md">
+  { content }
+</div>
+
+<div class="xl-col-1-1 lg-col-1-1 show-at-lg">
+  { content }
+</div>
+
+<div class="only-on-xs">
   { content }
 </div>
 ```
@@ -39,6 +68,8 @@ Usage: flex($flex-direction, $flex-wrap, $justify-content, $align-items)
 ```
 
 ## Media Queries
+
+* EDITING
 
 Usage min($width) | max($width) | min-max($min, $max)
 

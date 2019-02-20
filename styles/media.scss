@@ -1,17 +1,17 @@
-@mixin min($width) {
-  @media (min-width: $width) {
-    @content;
-  }
-}
-
-@mixin max($width) {
-  @media (max-width: $width) {
-    @content;
-  }
-}
-
-@mixin min-max($min, $max) {
-  @media (min-width: $min) and (max-width: $max - 1) {
-    @content;
-  }
-}
+// @mixin min($width) {
+//   @media (min-width: $width) {
+//     @content;
+//   }
+// }
+//
+// @mixin max($width) {
+//   @media (max-width: $width) {
+//     @content;
+//   }
+// }
+//
+// @mixin min-max($min, $max) {
+//   @media (min-width: $min) and (max-width: $max - 1) {
+//     @content;
+//   }
+// }
