@@ -1,8 +1,8 @@
-# General Sass Styles
+# General SCSS Styles
 
 [Twitter](https://twitter.com/hackerbrief) | [Medium](https://medium.com/@hackerbrief)
 
-General Sass Style Library
+General SCSS Style Library
 
 * [Angles](/styles/angles.scss)
 * [Columns](/styles/columns.scss)
@@ -71,7 +71,7 @@ Usage: flex($flex-direction, $flex-wrap, $justify-content, $align-items)
 
 * EDITING
 
-Usage min($width) | max($width) | min-max($min, $max)
+Usage: min($width) | max($width) | min-max($min, $max)
 
 ```scss
 @include min(500px) { color: blue; }
