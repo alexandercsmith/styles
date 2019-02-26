@@ -1,6 +1,6 @@
 # General Sass Styles
 
-[Twitter](https://twitter.com/sudoawesome) | [Medium](https://medium.com/@sudoawesome)
+[Twitter](https://twitter.com/hackerbrief) | [Medium](https://medium.com/@hackerbrief)
 
 General Sass Style Library
 
